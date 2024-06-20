@@ -1,13 +1,13 @@
 {
     "builds": [{
-        "src": "HemoCareCenter/wsgi.py",
+        "src": "HemoCareCentre/wsgi.py",
         "use": "@vercel/python",
         "config": { "maxLambdaSize": "15mb", "runtime": "python3.9" }
     }],
     "routes": [
         {
             "src": "/(.*)",
-            "dest": "HemoCareCenter/wsgi.py"
+            "dest": "HemoCareCentre/wsgi.py"
         }
     ]
 }
