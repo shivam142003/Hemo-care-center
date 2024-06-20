@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADMIN</title>
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <style>
+
+
+    #det_he{
+      font-size:25px;
+      font-weight:bold;
+    }
+
+    .hsec{
+      display: flex;
+      margin-top:90px;
+    }
+
+    .sec1{
+      margin-left:230px;
+    }
+
+    .sec2{
+      margin-left:30px;
+    }
+    .btned,.btndel{
+      background-color:black;
+      border-radius:20px;
+      padding:10px;
+    }
+    .bg-inf{
+      background-color:rgb(203, 83, 83);
+    }
+
+    .row{
+        padding-top:100px;
+    }
+    .fa-tint{     
+        color:#ff001998;    
+    }
+
+    .fa-hand-holding-droplet{
+      color: #ff001998;
+    }
+    .fa-vial-circle-check{
+      color:#ff001998;
+    }
+    .blood{
+        float: right;
+    }
+    .fa-users{     
+        color: #ffff; 
+        font-size: 3ex;   
+    }
+    .fa-spinner{     
+        color:#ffff; 
+        font-size: 3ex;   
+    }
+    .fa-check-circle{     
+        color:#ffff; 
+        font-size: 3ex;   
+    }
+    .xyz{     
+        color:#ffff; 
+        font-size: 3ex;   
+    }
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Josefin Sans', sans-serif;
+}
+.card-body{
+  color: #ffff;
+}
+#b1{
+  background-color: #d6960a;
+}
+#b2{
+  background-color: #f12711;
+}
+#b3{
+  background-color: #216711;
+}
+#b4{
+  background-color: #2981c0;
+}
+
+body{
+   background-color: #ffff;
+}
+.bg-danger {
+    background-color: #ff001998!important;
+}
+
+.wrapper{
+  display: flex;
+  position: relative;
+}
+
+.wrapper .sidebar{
+  width: 200px;
+  height: 100%;
+  background:white;
+  padding:30px 0px;
+  position:fixed;
+}
+
+.wrapper .sidebar h2{
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.wrapper .sidebar ul li{
+  padding: 15px;
+  border-bottom: 1px solid #bdb8d7;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  border-top: 1px solid rgba(255,255,255,0.05);
+}    
+
+.wrapper .sidebar ul li a{
+  color:black;
+  display: block;
+}
+
+.wrapper .sidebar ul li a .fas{
+  width: 25px;
+}
+
+.wrapper .sidebar ul li:hover{
+  background-color: black;
+}
+    
+.wrapper .sidebar ul li:hover a{
+  color: #fff;
+}
+ 
+.wrapper .sidebar .social_media{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.wrapper .sidebar .social_media a{
+  display: block;
+  width: 40px;
+  background: #594f8d;
+  height: 40px;
+  line-height: 45px;
+  text-align: center;
+  margin: 0 5px;
+  color: #bdb8d7;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.wrapper .main_content{
+  width: 100%;
+  margin-left: 200px;
+}
+
+.wrapper .main_content .header{
+  padding: 20px;
+  background: #fff;
+  color: #717171;
+  border-bottom: 1px solid #e0e4e8;
+}
+
+.wrapper .main_content .info{
+  margin: 20px;
+  color: #717171;
+  line-height: 25px;
+}
+
+.wrapper .main_content .info div{
+  margin-bottom: 20px;
+}
+
+@media (max-height: 500px){
+  .social_media{
+    display: none !important;
+  }
+}
+.fa-sign-out-alt{
+    color: white;
+    font-size: 2ex;
+}
+.fa-bars{
+  font-size:100px 50px;
+
+}
+#bt1{
+  width:30px;
+  
+}
+
+#bl_label{
+  font-size:25px;
+  margin-left:100px;
+  margin-bottom:20px;
+}
+
+.upd{
+  margin-top:150px;
+
+}
+
+#choose{
+  margin-top:150px;
+  margin-right:250px;
+}
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-danger">
+        <a style="color:white;" class="navbar-brand" href="/"><i class="fab fa-gratipay"></i>&nbsp;<font face = "Comic sans MS" size ="4">Hemo Care Center</font></a>
+        
+      
+        <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" style="color: white;" href="index">Logout &nbsp; <i class="fas fa-sign-out-alt"></i></a>
+                </li>
+                
+            </ul>
+        </div>
+      </nav>
+<br><br>
+<br>
+<div class="wrapper">
+  <div class="sidebar">
+      <button id="bt1" data-toggle="collapse" data-target="#demo"><i class="fas fa-bars"></i></button>
+        
+        <ul id="demo" class="collapse show">
+            <li><a style="text-decoration:none;" href="/"><i class="fas fa-home"></i>Home</a></li>
+            <li><a style="text-decoration:none;" href="/admin-donor"><i class="fas fa-user"></i>Donor</a></li>
+            <li><a style="text-decoration:none;" href="/admin-patient"><i class="fas fa-user-injured"></i>Patient</a></li>
+            <li><a style="text-decoration:none;" href="/admin-donation"><i class="fas fa-hand-holding-medical"></i>Donations</a></li>
+            <li><a style="text-decoration:none;" href="/admin-request"><i class="fas fa-sync-alt"></i>Blood Requests</a></li>
+            <li><a style="text-decoration:none;" href="/admin-request-history"><i class="fas fa-history"></i>Request History</a></li>
+            <li><a style="text-decoration:none;" href="/admin-blood"><i class="fas fa-hand-holding-water"></i>Blood Stock</a></li>
+           
+        </ul> 
+
+    </div>
+
+    <div class="main_content">
+
+
+{% block content %}
+
+{% endblock content %}
+
+
+
+    </div>
+</div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>

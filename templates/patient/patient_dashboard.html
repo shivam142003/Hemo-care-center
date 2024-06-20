@@ -1,0 +1,90 @@
+{% extends 'patient/patientbase.html' %}
+{% block content %}
+<head>
+    <style>
+            .xyz{     
+        color: blue; 
+        font-size: 3ex;   
+    }
+
+    #car1{
+      background-color:rgb(214, 171, 40);
+    }
+
+    #car2{
+      background-color:red;
+    }
+
+    #car3{
+      background-color:green;
+    }
+
+    #car4{
+      background-color:rgb(80, 80, 181);
+    }
+    </style>
+</head>
+<br><br>
+<div class="container">
+
+ 
+    <div class="row">
+      <div class="col-sm-3">
+        <div class="card" id="car1">
+          <div class="card-body">
+              <div class="blood">
+                <i class="fas fa-sync-alt xyz"></i>
+              </div><br>
+              <div>
+                Request Made <br>
+                  {{requestmade}}
+              </div>                            
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-3">
+        <div class="card" id="car2">
+            <div class="card-body">
+                <div class="blood">
+                  <i class="fas fa-sync xyz"></i>
+                </div><br>
+                <div>
+                    Pending Request <br>
+                    {{requestpending}}
+                </div>                            
+            </div>
+          </div>
+      </div>
+
+      <div class="col-sm-3">
+          <div class="card" id="car3">
+              <div class="card-body">
+                  <div class="blood">
+                    <i class="fas fa-check-circle xyz"></i>
+                  </div><br>
+                  <div>
+                       Approved Request<br>
+                      {{requestapproved}}
+                  </div>                            
+              </div>
+            </div>
+      </div>
+      <div class="col-sm-3">
+          <div class="card" id="car4">
+              <div class="card-body">
+                  <div class="blood">
+                    <i class="fas fa-times-circle xyz"></i>
+                  </div><br>
+                  <div>
+                       Rejected Request <br>
+                      {{requestrejected}}
+                  </div>                            
+              </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+{% endblock content %}

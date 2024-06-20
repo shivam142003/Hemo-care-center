@@ -1,0 +1,107 @@
+{% extends 'blood/adminbase.html' %}
+{% block content %}
+<br><br>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-3">
+          <div class="card bg-light">
+            <div class="card-body" id="b1">
+                <div class="blood">
+                    <i class="fas fa-users"></i>
+                </div>
+                <div>
+                    Total Donors:
+                    {{totaldonors}}
+                </div>                            
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="card bg-light">
+                <div class="card-body" id="b2">
+                    <div class="blood">
+                        <i class="fas fa-spinner"></i>
+                    </div>
+                    <div>
+                        Total Requests:
+                       {{totalrequest}}
+                    </div>                            
+                </div>
+              </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="card bg-light">
+                <div class="card-body" id="b3">
+                    <div class="blood">
+                        <i class="far fa-check-circle"></i>
+                    </div>
+                    <div>
+                        Approved Requests:
+                        {{totalapprovedrequest}}
+                    </div>                            
+                </div>
+              </div>
+          </div>
+
+    <div class="col-sm-3">
+        <div class="card bg-light">
+            <div class="card-body" id="b4">
+                <div class="blood">
+                    <i class="fas fa-tint xyz"></i>
+                </div>
+            <div>
+                Total Blood Unit (in ml):
+                {{totalbloodunit}}
+            </div>                            
+            </div>
+        </div>
+        </div>
+      </div>
+  </div>
+  <div class="hsec">
+  <div class="sec1">
+    <div class="ca">
+        <div class="bl">
+            <h2 id="bl_label">A+ Blood Unit<i class="fas fa-hand-holding-droplet"></i>=  {{A1.unit}}</h2>
+        </div>
+    </div>
+    <div class="ca">
+        <div class="bl">
+            <h2 id="bl_label">B+ Blood Unit<i class="fas fa-hand-holding-droplet"></i>=  {{B1.unit}}</h2>
+        </div>
+    </div>
+    <div class="ca">
+        <div class="bl">
+            <h2 id="bl_label">O+ Blood Unit<i class="fas fa-hand-holding-droplet"></i>=  {{O1.unit}}</h2>
+        </div>
+    </div>
+    <div class="ca">
+        <div class="bl">
+            <h2 id="bl_label">AB+ Blood Unit<i class="fas fa-hand-holding-droplet"></i>=  {{AB1.unit}}</h2>
+        </div>
+    </div>
+</div>
+<div class="sec2">
+    <div class="ca">
+        <div class="bl">
+            <h2 id="bl_label">A- Blood Unit<i class="fas fa-hand-holding-droplet"></i>=  {{A2.unit}}</h2>
+        </div>
+    </div>
+    <div class="ca">
+        <div class="bl">
+            <h2 id="bl_label">B- Blood Unit<i class="fas fa-hand-holding-droplet"></i>=  {{B2.unit}}</h2>
+        </div>
+    </div>
+    <div class="ca">
+        <div class="bl">
+            <h2 id="bl_label">O- Blood Unit<i class="fas fa-hand-holding-droplet"></i>=  {{O2.unit}}</h2>
+        </div>
+    </div>
+    <div class="ca">
+        <div class="bl">
+            <h2 id="bl_label">AB- Blood Unit<i class="fas fa-hand-holding-droplet"></i>=  {{AB2.unit}}</h2>
+        </div>
+    </div>
+</div>
+  </div>
+{% endblock content %}

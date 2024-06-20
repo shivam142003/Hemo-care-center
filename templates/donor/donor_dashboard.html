@@ -1,0 +1,69 @@
+{% extends 'donor/donorbase.html' %}
+{% block content %}
+<br><br>
+<div class="container">
+
+
+    <div class="row">
+
+      <div class="col-sm-3">
+        <div class="card bg-light">
+          <div class="card-body" id="b1">
+              <div class="blood">
+                <i class="fas fa-sync-alt xyz"></i>
+              </div>
+              <div>
+                Request Made
+                  {{requestmade}}
+              </div>                            
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-3">
+        <div class="card bg-light">
+            <div class="card-body" id="b2">
+                <div class="blood">
+                  <i class="fas fa-sync xyz"></i>
+                </div>
+                <div>
+                    Pending Request
+                    {{requestpending}}
+                </div>                            
+            </div>
+          </div>
+      </div>
+
+      <div class="col-sm-3">
+          <div class="card bg-light">
+              <div class="card-body" id="b3">
+                  <div class="blood">
+                    <i class="fas fa-check-circle xyz"></i>
+                  </div>
+                  <div>
+                       Approved Request
+                      {{requestapproved}}
+                  </div>                            
+              </div>
+            </div>
+      </div>
+      <div class="col-sm-3">
+          <div class="card bg-light">
+              <div class="card-body" id="b4">
+                  <div class="blood">
+                    <i class="fas fa-times-circle xyz"></i>
+                  </div>
+                  <div>
+                       Rejected Request
+                      {{requestrejected}}
+                  </div>                            
+              </div>
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+
+{% endblock content %}
